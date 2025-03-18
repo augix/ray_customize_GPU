@@ -7,7 +7,7 @@
 HOSTNAME=$(hostname)
 
 # Get the number of GPUs using nvidia-smi
-NUM_GPUS=$(nvidia-smi -L | wc -l)
+NUM_GPUS=$1
 
 # Construct the resources JSON string
 RESOURCES="{"
